@@ -36,6 +36,12 @@ body {
 	padding: 7rem 0 3rem 0;
 }
 
+/* icons sizes */
+#arrow_icon {
+	font-size: 2rem;
+	color: var(--primary-text-color);
+}
+
 /* GLOBAL BOOTSTRAP STYLES OVERRIDE */
 
 .btn-primary {
@@ -45,4 +51,11 @@ body {
 .btn-primary:hover {
 	background-color: var(--secondary-text-color);
 	border-color: var(--secondary-text-color);
+}
+
+/* modal body */
+.modal-body {
+	height: -webkit-fill-available;
+	display: flex;
+	align-items: center;
 }

@@ -18,13 +18,18 @@
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
 		/>
 
-		<!-- CSS + BOOTSTRAP IMPORT -->
+		<!-- CSS + BOOTSTRAP + SWIPER IMPORT -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 			crossorigin="anonymous"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
+
 		<link rel="stylesheet" href="new-york.css" />
 
 		<!-- SCRIPT IMPORT -->
@@ -33,6 +38,8 @@
 			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 			crossorigin="anonymous"
 		></script>
+
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<script src="scripts.js" type="text/javascript" defer></script>
 		<title>Homepage</title>
 	</head>
@@ -133,7 +140,11 @@
 								<span class="hotel_num">1</span> The Whitby Hotel
 							</h5>
 							<!-- Hotel images grid -->
-							<div class="row g-0">
+							<div
+								class="row g-0"
+								data-bs-toggle="modal"
+								data-bs-target="#staticBackdrop"
+							>
 								<div class="col-sm-12 col-md-8 hotel_main_image_col">
 									<img
 										alt="Whitby Hotel"
@@ -165,6 +176,125 @@
 													<h2 class="card-title text-light">27+</h2>
 													<h6 class="card-text text-light">images</h6>
 												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Hotel image carousel modal -->
+							<!-- Modal -->
+							<div
+								class="modal fade"
+								id="staticBackdrop"
+								data-bs-backdrop="static"
+								data-bs-keyboard="false"
+								tabindex="-1"
+								aria-labelledby="staticBackdropLabel"
+								aria-hidden="true"
+							>
+								<div class="modal-dialog modal-fullscreen">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="staticBackdropLabel">
+												Modal title
+											</h5>
+											<button
+												type="button"
+												class="btn-close"
+												data-bs-dismiss="modal"
+												aria-label="Close"
+											></button>
+										</div>
+										<!-- image carousel -->
+										<div class="modal-body">
+											<div class="swiper mySwiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<div class="swiper-zoom-container">
+															<img
+																alt="Whitby Hotel "
+																src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg"
+															/>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="swiper-zoom-container">
+															<img
+																alt="Whitby Hotel "
+																src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg"
+															/>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="swiper-zoom-container">
+															<img
+																alt="Whitby Hotel "
+																src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg"
+															/>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="swiper-zoom-container">
+															<img
+																alt="Whitby Hotel "
+																src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg"
+															/>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="swiper-zoom-container">
+															<img
+																alt="Whitby Hotel "
+																src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg"
+															/>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="swiper-zoom-container">
+															<img
+																alt="Whitby Hotel "
+																src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg"
+															/>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="swiper-zoom-container">
+															<img
+																alt="Whitby Hotel "
+																src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg"
+															/>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="swiper-zoom-container">
+															<img
+																alt="Whitby Hotel "
+																src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg"
+															/>
+														</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="swiper-zoom-container">
+															<img
+																alt="Whitby Hotel "
+																src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg"
+															/>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-button-next">
+													<em
+														class="bi bi-arrow-right-square-fill"
+														id="arrow_icon"
+													></em>
+												</div>
+												<div class="swiper-button-prev">
+													<em
+														class="bi bi-arrow-left-square-fill"
+														id="arrow_icon"
+													></em>
+												</div>
+												<div class="swiper-pagination"></div>
 											</div>
 										</div>
 									</div>
