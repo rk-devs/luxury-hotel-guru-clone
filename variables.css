@@ -1,11 +1,27 @@
 /* Variable declarations starts here*/
 :root {
+	/* text colors */
 	--primary-text-color: rgb(246, 99, 99);
 	--secondary-text-color: rgb(246, 153, 99);
+	--tertiary-text-color: rgb(243, 243, 243);
+	--alt-text-color: hsl(340, 60%, 65%);
+	--light-text-color: hsl(0, 0%, 100%);
+	--dark-text-color: hsl(0, 0%, 0%);
+	/* background colors */
 	--primary-background-color: aliceblue;
-	--secondary-background-color: rgb(255, 255, 255);
-	--alt-background-color: rgb(100, 222, 59);
+	--secondary-background-color: rgb(253, 221, 221);
+	--tertiary-background-color: rgb(246, 99, 99);
+	--alt-background-color: hsl(216, 100%, 99%);
+	--light-background-color: hsl(0, 0%, 100%);
+	--dark-background-color: hsl(0, 0%, 0%);
+	/* border colors */
 	--primary-border-color: rgb(222, 186, 76);
 	--secondary-border-color: rgb(86, 118, 23);
+	--tertiary-border-color: rgb(86, 118, 23);
+	--alt-border-color: rgb(86, 118, 23);
+	--light-border-color: hsl(0, 0%, 100%);
+	--dark-border-color: hsl(0, 0%, 0%);
+	/* misc colors */
+	--primary-shadow-color: rgba(0, 0, 0, 0.5);
 }
 /* Variable declarations ends here*/

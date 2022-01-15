@@ -1,52 +1,11 @@
 @import url("variables.css"); /* Import variables.css */
-
-html {
-	scroll-behavior: smooth;
-}
-* {
-	padding: 0;
-	margin: 0;
-	/* for debugging ghost elements */
-	/* background: #000 !important;
-	color: #0f0 !important;
-	outline: solid #f00 1px !important; */
-}
-
-*:focus {
-	outline: 0;
-}
-/* Show loader until images are loaded */
-img {
-	background: url("loader.gif") no-repeat;
-	background-position: center;
-}
-
-a {
-	text-decoration: none;
-	color: var(--primary-text-color);
-}
-a:hover {
-	color: var(--secondary-text-color);
-}
-
-/* BODY STYLING */
-body {
-	font-family: "Ubuntu", sans-serif !important;
-	background-color: aliceblue;
-}
-
-/* Header Styles */
-.heading_container {
-	padding: 7rem 0 3rem 0;
-
-	/* filter: blur(1px); */
-}
+@import url("global.css"); /* Import global.css */
 
 /****************************************************************** Listing page css starts here*/
 
 /* Main container css */
 .main_container {
-	background-color: snow;
+	background-color: var(--alt-background-color);
 	padding: 5rem;
 }
 @media screen and (max-width: 990px) {
@@ -76,7 +35,7 @@ body {
 }
 .article-author {
 	border-radius: 100px;
-	border: 5px solid #fff;
+	border: 5px solid var(--secondary-background-color);
 	position: relative;
 }
 
@@ -114,7 +73,7 @@ body {
 	border-radius: 30px;
 	text-align: center;
 	margin-right: 5px;
-	color: #fff;
+	color: var(--tertiary-text-color);
 }
 /*  ************************* HOTEL IMAGE CSS STARTS HERE  ************************  */
 .hotel_main_image_col {
@@ -152,16 +111,16 @@ body {
 
 /* Stars styling */
 .rating {
-	color: #ffd700;
+	color: var(--primary-text-color);
 }
 
 .hotel_review_row {
 	margin-top: 2rem;
-	background-color: hsl(240, 67%, 94%);
+	background-color: var(--secondary-background-color);
 }
 
 .hotel_review_col {
-	border-right: 3px solid black;
+	border-right: 3px solid var(--secondary-border-color);
 	font-style: italic;
 }
 
@@ -173,7 +132,7 @@ body {
 }
 
 .review_author {
-	color: palevioletred;
+	color: var(--alt-text-color);
 }
 
 .review_author::before {
@@ -192,7 +151,7 @@ body {
 }
 
 .card-img-overlay {
-	background: rgba(0, 0, 0, 0.5);
+	background: var(--primary-shadow-color);
 	border-radius: 0 !important;
 	display: flex;
 	flex-direction: column;
@@ -203,4 +162,18 @@ body {
 .btn-secondary {
 	border-radius: 100px;
 }
+
+.nav-link {
+	color: var(--primary-text-color);
+}
+
+.nav-link:hover {
+	color: var(--secondary-text-color);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	background-color: var(--tertiary-background-color);
+}
+
 /* ? ************************* BOOTSTRAP CSS OVERRIDES ENDS HERE  ************************* */

@@ -1,41 +1,5 @@
 @import url("variables.css"); /* Import variables.css */
-
-html {
-	scroll-behavior: smooth;
-}
-* {
-	padding: 0;
-	margin: 0;
-}
-
-*:focus {
-	outline: 0;
-}
-
-/* Show loader until images are loaded */
-img {
-	background: url("loader.gif") no-repeat;
-	background-position: center;
-}
-
-a {
-	text-decoration: none;
-	color: var(--primary-text-color);
-}
-a:hover {
-	color: var(--secondary-text-color);
-}
-
-/* BODY STYLING */
-body {
-	font-family: "Ubuntu", sans-serif !important;
-	background-color: var(--primary-background-color);
-}
-
-/* Header Styles */
-.heading_container {
-	padding: 7rem 0 3rem 0;
-}
+@import url("global.css"); /* Import global.css */
 
 /* Search css starts here */
 
@@ -92,7 +56,7 @@ li.timeline-item::before {
 	width: 14px;
 	height: 14px;
 	z-index: 400;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 5px var(--primary-shadow-color);
 }
 /* timeline css ends here */
 
@@ -103,7 +67,7 @@ li.timeline-item::before {
 }
 .author {
 	border-radius: 100px;
-	border: 5px solid #fff;
+	border: 5px solid var(--light-text-color);
 	position: relative;
 }
 
@@ -133,12 +97,8 @@ li.timeline-item::before {
 
 /* ? ************************* BOOTSTRAP CSS OVERRIDES STARTS HERE  ************************* */
 
-.img-fluid {
-	height: 100%;
-}
-
 .card-img-overlay {
-	background: rgba(0, 0, 0, 0.5);
+	background: var(--primary-shadow-color);
 	border-radius: 0 !important;
 	display: flex;
 	flex-direction: column;
@@ -152,19 +112,9 @@ li.timeline-item::before {
 	opacity: 0.9;
 }
 
-.btn-primary {
-	background-color: var(--primary-text-color);
-	border-color: var(--primary-text-color);
-}
-.btn-primary:hover {
-	background-color: var(--secondary-text-color);
-	border-color: var(--secondary-text-color);
-}
-
 .btn-secondary {
 	border-radius: 100px;
 	min-width: 6rem;
-	background-color: slategrey;
 }
 
 .btn-link {
@@ -183,7 +133,7 @@ li.timeline-item::before {
 
 .input-group-text {
 	border: none;
-	background-color: var(--secondary-background-color);
+	background-color: var(--light-background-color);
 }
 
 /* ? ************************* BOOTSTRAP CSS OVERRIDES ENDS HERE  ************************* */

@@ -1,0 +1,48 @@
+@import url("variables.css"); /* Import variables.css */
+
+html {
+	scroll-behavior: smooth;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+
+*:focus {
+	outline: 0;
+}
+
+/* Show loader until images are loaded */
+img {
+	background: url("loader.gif") no-repeat;
+	background-position: center;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-text-color);
+}
+a:hover {
+	color: var(--secondary-text-color);
+}
+
+/* BODY STYLING */
+body {
+	font-family: "Ubuntu", sans-serif !important;
+	background-color: var(--primary-background-color);
+}
+/* Header Styles */
+.heading_container {
+	padding: 7rem 0 3rem 0;
+}
+
+/* GLOBAL BOOTSTRAP STYLES OVERRIDE */
+
+.btn-primary {
+	background-color: var(--primary-text-color);
+	border-color: var(--primary-text-color);
+}
+.btn-primary:hover {
+	background-color: var(--secondary-text-color);
+	border-color: var(--secondary-text-color);
+}
