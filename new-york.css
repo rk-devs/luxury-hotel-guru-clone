@@ -1,3 +1,5 @@
+@import url("variables.css"); /* Import variables.css */
+
 html {
 	scroll-behavior: smooth;
 }
@@ -16,10 +18,15 @@ html {
 /* Show loader until images are loaded */
 img {
 	background: url("loader.gif") no-repeat;
+	background-position: center;
 }
 
 a {
 	text-decoration: none;
+	color: var(--primary-text-color);
+}
+a:hover {
+	color: var(--secondary-text-color);
 }
 
 /* BODY STYLING */

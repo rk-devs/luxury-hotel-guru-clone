@@ -1,13 +1,11 @@
+@import url("variables.css"); /* Import variables.css */
+
 html {
 	scroll-behavior: smooth;
 }
 * {
 	padding: 0;
 	margin: 0;
-	/* for debugging ghost elements */
-	/* background: #000 !important;
-	color: #0f0 !important;
-	outline: solid #f00 1px !important; */
 }
 
 *:focus {
@@ -17,22 +15,36 @@ html {
 /* Show loader until images are loaded */
 img {
 	background: url("loader.gif") no-repeat;
+	background-position: center;
 }
 
 a {
 	text-decoration: none;
+	color: var(--primary-text-color);
+}
+a:hover {
+	color: var(--secondary-text-color);
 }
 
 /* BODY STYLING */
 body {
 	font-family: "Ubuntu", sans-serif !important;
-	background-color: aliceblue;
+	background-color: var(--primary-background-color);
 }
 
 /* Header Styles */
 .heading_container {
 	padding: 7rem 0 3rem 0;
 }
+
+/* Search css starts here */
+
+.search_field {
+	border: none;
+	width: 50%;
+}
+
+/* Search css ends here*/
 
 /* Timeline Css starts here */
 ul.timeline {
@@ -44,7 +56,7 @@ ul.timeline {
 /* Timeline vertical line */
 ul.timeline:before {
 	content: " ";
-	background: #fff;
+	background: var(--secondary-background-color);
 	display: inline-block;
 	position: absolute;
 	left: 16px;
@@ -61,7 +73,7 @@ li.timeline-item {
 /* Timeline item arrow */
 .timeline-arrow {
 	border-top: 0.5rem solid transparent;
-	border-right: 0.5rem solid rgb(175, 231, 64);
+	border-right: 0.5rem solid var(--primary-border-color);
 	border-bottom: 0.5rem solid transparent;
 	display: block;
 	position: absolute;
@@ -71,11 +83,11 @@ li.timeline-item {
 /* Timeline item circle marker */
 li.timeline-item::before {
 	content: " ";
-	background: #ddd;
+	background: var(--secondary-text-color);
 	display: inline-block;
 	position: absolute;
 	border-radius: 50%;
-	border: 3px solid #fff;
+	border: 3px solid var(--primary-text-color);
 	left: 11px;
 	width: 14px;
 	height: 14px;
@@ -132,15 +144,36 @@ li.timeline-item::before {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 	top: 80%;
+}
+
+.card-img:hover {
+	opacity: 0.9;
+}
+
+.btn-primary {
+	background-color: var(--primary-text-color);
+	border-color: var(--primary-text-color);
+}
+.btn-primary:hover {
+	background-color: var(--secondary-text-color);
+	border-color: var(--secondary-text-color);
 }
 
 .btn-secondary {
 	border-radius: 100px;
+	min-width: 6rem;
+	background-color: slategrey;
 }
+
 .btn-link {
 	text-decoration: none;
 	border-radius: 100px;
+	color: var(--primary-text-color);
+}
+.btn-link:hover {
+	color: var(--secondary-text-color);
 }
 
 /* input overrides */
@@ -150,12 +183,7 @@ li.timeline-item::before {
 
 .input-group-text {
 	border: none;
-	background-color: white;
-}
-
-.search_field {
-	border: none;
-	width: 50%;
+	background-color: var(--secondary-background-color);
 }
 
 /* ? ************************* BOOTSTRAP CSS OVERRIDES ENDS HERE  ************************* */

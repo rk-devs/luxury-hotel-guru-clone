@@ -1,0 +1,11 @@
+/* Variable declarations starts here*/
+:root {
+	--primary-text-color: rgb(246, 99, 99);
+	--secondary-text-color: rgb(246, 153, 99);
+	--primary-background-color: aliceblue;
+	--secondary-background-color: rgb(255, 255, 255);
+	--alt-background-color: rgb(100, 222, 59);
+	--primary-border-color: rgb(222, 186, 76);
+	--secondary-border-color: rgb(86, 118, 23);
+}
+/* Variable declarations ends here*/
