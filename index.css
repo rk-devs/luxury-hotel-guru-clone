@@ -133,4 +133,24 @@ li.timeline-item::before {
 .btn-secondary {
 	border-radius: 100px;
 }
+.btn-link {
+	text-decoration: none;
+	border-radius: 100px;
+}
+
+/* input overrides */
+.input-group {
+	justify-content: center;
+}
+
+.input-group-text {
+	border: none;
+	background-color: white;
+}
+
+.search_field {
+	border: none;
+	width: 50%;
+}
+
 /* ? ************************* BOOTSTRAP CSS OVERRIDES ENDS HERE  ************************* */

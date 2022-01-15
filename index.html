@@ -43,7 +43,9 @@
 			<!-- Navbar -->
 			<nav class="navbar navbar-dark fixed-top bg-dark" aria-label="header">
 				<div class="container-fluid d-flex justify-content-center">
-					<a class="navbar-brand" href="/">Navbar</a>
+					<a class="navbar-brand" href="/">
+						<em class="bi bi-apple"></em>&nbsp;Navbar</a
+					>
 				</div>
 			</nav>
 
@@ -54,23 +56,23 @@
 					Hotels in the World
 				</h1>
 			</div>
+
+			<!-- Search bar starts here -->
 			<div class="container">
-				<div class="input-group mb-3">
+				<div class="input-group">
+					<span class="input-group-text"><em class="bi bi-search"></em></span>
 					<input
 						type="text"
-						class="form-control"
+						class="search_field"
 						placeholder="Search destinations ..."
 						aria-label="Search destinations"
 					/>
-					<button
-						class="btn btn-outline-secondary"
-						type="button"
-						id="search_button"
-					>
-						Go
-					</button>
+					<span class="input-group-text">
+						<button type="button" class="btn btn-link">Go</button>
+					</span>
 				</div>
 			</div>
+			<!-- Search bar ends here -->
 		</header>
 		<!-- Header ends here -->
 
@@ -81,8 +83,8 @@
 				<h6 class="text-center p-3">Popular luxury hotel destinations</h6>
 
 				<!-- First row of locations starts here -->
-				<div class="row">
-					<div class="col-4">
+				<div class="row g-4">
+					<div class="col-12 col-md-4">
 						<div class="card">
 							<a href="new-york.html">
 								<img
@@ -98,7 +100,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<div class="card">
 							<a href="/new-york.html">
 								<img
@@ -114,7 +116,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<div class="card">
 							<a href="new-york.html">
 								<img
@@ -135,8 +137,8 @@
 				<!-- First row of locations ends here -->
 
 				<!-- Second row of locations starts here -->
-				<div class="row">
-					<div class="col-4">
+				<div class="row g-4">
+					<div class="col-12 col-md-4">
 						<div class="card">
 							<a href="new-york.html">
 								<img
@@ -152,7 +154,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<div class="card">
 							<a href="/new-york.html">
 								<img
@@ -168,7 +170,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<div class="card">
 							<a href="new-york.html">
 								<img
@@ -189,8 +191,8 @@
 				<!-- Second row of locations ends here -->
 
 				<!-- Third row of locations starts here -->
-				<div class="row">
-					<div class="col-4">
+				<div class="row g-4">
+					<div class="col-12 col-md-4">
 						<div class="card">
 							<a href="new-york.html">
 								<img
@@ -206,7 +208,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<div class="card">
 							<a href="/new-york.html">
 								<img
@@ -222,7 +224,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<div class="card">
 							<a href="new-york.html">
 								<img
@@ -249,7 +251,7 @@
 			<div class="container p-5">
 				<h6 class="text-center p-3">Destinations we also recommend</h6>
 
-				<div class="row gap-4">
+				<div class="row g-4">
 					<div class="col">
 						<a
 							href="#"
@@ -308,7 +310,7 @@
 				<br />
 
 				<!-- Second row of destinations -->
-				<div class="row gap-4">
+				<div class="row g-4">
 					<div class="col">
 						<a
 							href="#"
