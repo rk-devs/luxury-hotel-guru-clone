@@ -1,0 +1,183 @@
+html {
+	scroll-behavior: smooth;
+}
+* {
+	padding: 0;
+	margin: 0;
+	/* for debugging ghost elements */
+	/* background: #000 !important;
+	color: #0f0 !important;
+	outline: solid #f00 1px !important; */
+}
+
+*:focus {
+	outline: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* BODY STYLING */
+body {
+	font-family: "Ubuntu", sans-serif !important;
+	background-color: aliceblue;
+}
+
+/* Header Styles */
+.heading_container {
+	padding: 7rem 0 3rem 0;
+
+	/* filter: blur(1px); */
+}
+
+/* Main container css */
+.main_container {
+	background-color: snow;
+	padding: 5rem;
+}
+@media screen and (max-width: 990px) {
+	.main_container {
+		padding: 1rem;
+	}
+}
+/* Main container css ends here */
+
+/* side nav css starts here*/
+.author-card-with-sidebar {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+}
+@media screen and (max-width: 990px) {
+	#hotel_side_nav {
+		display: none;
+	}
+}
+/* side nav css ends here*/
+
+/* AUthor image's css starts here */
+.article-author-container {
+	display: flex;
+	justify-content: center;
+}
+.article-author {
+	border-radius: 100px;
+	border: 5px solid #fff;
+	position: relative;
+}
+
+.article-author-image-one {
+	background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/megan-fox-1604309045.jpg?crop=0.689xw:0.458xh;0.149xw,0.0107xh&resize=640:*");
+	z-index: 1;
+	background-size: cover;
+	min-width: 80px;
+	height: 80px;
+}
+
+/*   for second author */
+.article-author-image-two {
+	right: 10%;
+	background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg?width=982&height=726&auto=webp&quality=75");
+	background-size: cover;
+	min-width: 80px;
+	height: 80px;
+}
+@media screen and (max-width: 990px) {
+	.article-author-image-two {
+		right: 3%;
+	}
+}
+
+/* Author image's css ends */
+
+/* ! ************************* HOTEL CARD CSS STARTS HERE  ************************  */
+/* hotel number styling */
+.hotel_num {
+	padding: 5px;
+	min-width: 33px;
+	background: #111;
+	display: inline-block;
+	border-radius: 30px;
+	text-align: center;
+	margin-right: 5px;
+	color: #fff;
+}
+/*  ************************* HOTEL IMAGE CSS STARTS HERE  ************************  */
+.hotel_main_image_col {
+	cursor: pointer;
+}
+
+.hotel_submain_image_col {
+	cursor: pointer;
+}
+
+.hotel_main_image_col:hover {
+	opacity: 0.9;
+}
+
+.hotel_submain_image_col:hover {
+	opacity: 0.9;
+}
+/*  ************************* HOTEL IMAGE CSS ENDS HERE  ************************  */
+/*  ************************* HOTEL DESCRIPTION CSS STARTS HERE  ************************  */
+
+.hotel_description a {
+	display: inline-block;
+}
+
+.hotel_description {
+	position: relative;
+}
+
+.hotel_description_detailed {
+	display: none;
+}
+
+/*  ************************* HOTEL DESCRIPTION CSS ENDS HERE  ************************  */
+
+/* Stars styling */
+.rating {
+	color: #ffd700;
+}
+
+.hotel_review_row {
+	margin-top: 2rem;
+	background-color: hsl(240, 67%, 94%);
+}
+
+.hotel_review_col {
+	border-right: 3px solid black;
+	font-style: italic;
+}
+
+.hotel_review::before {
+	content: "\201C";
+}
+.hotel_review::after {
+	content: "\201C";
+}
+
+.review_author {
+	color: palevioletred;
+}
+
+.review_author::before {
+	content: "\2014";
+}
+/* ! ************************* HOTEL CARD CSS ENDS HERE  ************************  */
+
+/* BOOTSTRAP CSS OVERRIDES */
+.card {
+	border: 0 !important;
+	border-radius: 0 !important;
+}
+
+.card-img-overlay {
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 0 !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
