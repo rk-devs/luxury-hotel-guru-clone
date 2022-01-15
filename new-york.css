@@ -73,8 +73,8 @@ body {
 	background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/megan-fox-1604309045.jpg?crop=0.689xw:0.458xh;0.149xw,0.0107xh&resize=640:*");
 	z-index: 1;
 	background-size: cover;
-	min-width: 80px;
-	height: 80px;
+	min-width: 90px;
+	height: 90px;
 }
 
 /*   for second author */
@@ -82,8 +82,8 @@ body {
 	right: 10%;
 	background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg?width=982&height=726&auto=webp&quality=75");
 	background-size: cover;
-	min-width: 80px;
-	height: 80px;
+	min-width: 90px;
+	height: 90px;
 }
 @media screen and (max-width: 990px) {
 	.article-author-image-two {
