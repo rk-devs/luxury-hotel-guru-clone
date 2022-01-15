@@ -1,0 +1,136 @@
+html {
+	scroll-behavior: smooth;
+}
+* {
+	padding: 0;
+	margin: 0;
+	/* for debugging ghost elements */
+	/* background: #000 !important;
+	color: #0f0 !important;
+	outline: solid #f00 1px !important; */
+}
+
+*:focus {
+	outline: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* BODY STYLING */
+body {
+	font-family: "Ubuntu", sans-serif !important;
+	background-color: aliceblue;
+}
+
+/* Header Styles */
+.heading_container {
+	padding: 7rem 0 3rem 0;
+}
+
+/* Timeline Css starts here */
+ul.timeline {
+	list-style-type: none;
+	position: relative;
+	padding-left: 1.5rem;
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+	content: " ";
+	background: #fff;
+	display: inline-block;
+	position: absolute;
+	left: 16px;
+	width: 4px;
+	height: 100%;
+	z-index: 400;
+	border-radius: 1rem;
+}
+
+li.timeline-item {
+	margin: 20px 20px;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+	border-top: 0.5rem solid transparent;
+	border-right: 0.5rem solid rgb(175, 231, 64);
+	border-bottom: 0.5rem solid transparent;
+	display: block;
+	position: absolute;
+	left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+	content: " ";
+	background: #ddd;
+	display: inline-block;
+	position: absolute;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	left: 11px;
+	width: 14px;
+	height: 14px;
+	z-index: 400;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+/* timeline css ends here */
+
+/* about us css starts here */
+.about-authors-container {
+	display: flex;
+	justify-content: center;
+}
+.author {
+	border-radius: 100px;
+	border: 5px solid #fff;
+	position: relative;
+}
+
+.author-image-one {
+	background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/megan-fox-1604309045.jpg?crop=0.689xw:0.458xh;0.149xw,0.0107xh&resize=640:*");
+	z-index: 1;
+	background-size: cover;
+	min-width: 100px;
+	height: 100px;
+}
+
+/*   for second author */
+.author-image-two {
+	right: 2%;
+	background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg?width=982&height=726&auto=webp&quality=75");
+	background-size: cover;
+	min-width: 100px;
+	height: 100px;
+}
+@media screen and (max-width: 990px) {
+	.author-image-two {
+		right: 5%;
+	}
+}
+
+/* about us css ends here */
+
+/* ? ************************* BOOTSTRAP CSS OVERRIDES STARTS HERE  ************************* */
+
+.img-fluid {
+	height: 100%;
+}
+
+.card-img-overlay {
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 0 !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 80%;
+}
+
+.btn-secondary {
+	border-radius: 100px;
+}
+/* ? ************************* BOOTSTRAP CSS OVERRIDES ENDS HERE  ************************* */

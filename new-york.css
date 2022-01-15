@@ -31,6 +31,8 @@ body {
 	/* filter: blur(1px); */
 }
 
+/****************************************************************** Listing page css starts here*/
+
 /* Main container css */
 .main_container {
 	background-color: snow;
@@ -85,7 +87,7 @@ body {
 }
 @media screen and (max-width: 990px) {
 	.article-author-image-two {
-		right: 3%;
+		right: 2%;
 	}
 }
 
@@ -120,6 +122,7 @@ body {
 	opacity: 0.9;
 }
 /*  ************************* HOTEL IMAGE CSS ENDS HERE  ************************  */
+
 /*  ************************* HOTEL DESCRIPTION CSS STARTS HERE  ************************  */
 
 .hotel_description a {
@@ -167,10 +170,14 @@ body {
 }
 /* ! ************************* HOTEL CARD CSS ENDS HERE  ************************  */
 
-/* BOOTSTRAP CSS OVERRIDES */
+/* ? ************************* BOOTSTRAP CSS OVERRIDES STARTS HERE  ************************* */
 .card {
 	border: 0 !important;
 	border-radius: 0 !important;
+}
+
+.img-fluid {
+	height: 100%;
 }
 
 .card-img-overlay {
@@ -181,3 +188,8 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
+.btn-secondary {
+	border-radius: 100px;
+}
+/* ? ************************* BOOTSTRAP CSS OVERRIDES ENDS HERE  ************************* */
