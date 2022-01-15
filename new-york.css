@@ -13,6 +13,10 @@ html {
 *:focus {
 	outline: 0;
 }
+/* Show loader until images are loaded */
+img {
+	background: url("loader.gif") no-repeat;
+}
 
 a {
 	text-decoration: none;
