@@ -2,29 +2,29 @@
 
 :root {
 	/*? TEXT COLORS */
-	--primary-text-color: rgb(246, 99, 99);
-	--secondary-text-color: rgb(246, 153, 99);
-	--tertiary-text-color: rgb(243, 243, 243);
-	--alt-text-color: hsl(340, 60%, 65%);
+	--primary-text-color: hsl(267, 48%, 27%);
+	--secondary-text-color: hsl(180, 63%, 50%);
+	--tertiary-text-color: hsl(0, 0%, 95%);
+	--alt-text-color: hsl(0, 70%, 34%);
 	--light-text-color: hsl(0, 0%, 100%);
 	--dark-text-color: hsl(0, 0%, 0%);
 	/*? BACKGROUND COLORS */
-	--primary-background-color: aliceblue;
-	--secondary-background-color: rgb(253, 221, 221);
-	--tertiary-background-color: rgb(246, 99, 99);
+	--primary-background-color: hsl(208, 100%, 97%);
+	--secondary-background-color: hsl(180, 63%, 50%);
+	--tertiary-background-color: hsl(267, 86%, 22%);
 	--alt-background-color: hsl(216, 100%, 99%);
 	--light-background-color: hsl(0, 0%, 100%);
 	--dark-background-color: hsl(0, 0%, 0%);
 	/*? BORDER COLORS */
-	--primary-border-color: rgb(222, 186, 76);
-	--secondary-border-color: rgb(86, 118, 23);
-	--tertiary-border-color: rgb(86, 118, 23);
-	--alt-border-color: rgb(86, 118, 23);
+	--primary-border-color: hsl(45, 69%, 58%);
+	--secondary-border-color: hsl(80, 67%, 28%);
+	--tertiary-border-color: hsl(80, 67%, 28%);
+	--alt-border-color: hsl(80, 67%, 28%);
 	--light-border-color: hsl(0, 0%, 100%);
 	--dark-border-color: hsl(0, 0%, 0%);
 	/*? MISC COLORS */
-	--primary-shadow-color: rgba(0, 0, 0, 0.5);
+	--primary-shadow-color: hsla(0, 0%, 0%, 0.5);
 	/*? LIBRARY COLOR OVERRIDES   */
-	--swiper-navigation-color: rgb(246, 99, 99);
-	--swiper-pagination-color: rgba(246, 99, 99, 0.548);
+	--swiper-navigation-color: hsl(267, 86%, 22%);
+	--swiper-pagination-color: hsla(0, 89%, 68%, 0.548);
 }

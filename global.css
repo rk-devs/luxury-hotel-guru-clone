@@ -23,11 +23,11 @@ img {
 
 a {
 	text-decoration: none;
-	color: var(--primary-text-color);
+	color: var(--secondary-text-color);
 }
 
 a:hover {
-	color: var(--secondary-text-color);
+	color: var(--primary-text-color);
 }
 
 #section_hr {
@@ -159,14 +159,14 @@ body {
 /*! ********************************* GLOBAL SWIPER STYLES STARTS ***************************/
 
 .btn-primary {
-	background-color: var(--primary-text-color);
-	border-color: var(--primary-text-color);
+	background-color: var(--secondary-text-color);
+	border-color: var(--secondary-text-color);
 }
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-	background-color: var(--secondary-text-color);
-	border-color: var(--secondary-text-color);
+	background-color: var(--primary-text-color);
+	border-color: var(--primary-text-color);
 }
 
 /* MODAL BODY */
