@@ -6,8 +6,9 @@
 /****************************************************************** Listing page css starts here*/
 
 #map_button {
-	display: flex;
-	justify-content: flex-end;
+	z-index: 100;
+	right: 0;
+	position: fixed;
 }
 
 /* Main container css */
