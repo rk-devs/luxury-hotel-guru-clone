@@ -213,18 +213,30 @@
 											</h5>
 
 											<div>
-												<button class="btn btn-light btn-sm" title="Share">
+												<button
+													class="btn btn-primary btn-sm"
+													title="Share it"
+													onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${localStorage.getItem('activeSlideUrl')}`);return false;"
+												>
 													<em class="bi bi-facebook"></em>
 												</button>
-												<button class="btn btn-light btn-sm" title="Tweet">
+												<button
+													class="btn btn-primary btn-sm"
+													title="Tweet it"
+													onclick="window.open(`https://twitter.com/intent/tweet?text=check%20this%20awesome%20location%20${localStorage.getItem('activeSlideUrl')}`);return false;"
+												>
 													<em class="bi bi-twitter"></em>
 												</button>
-												<button class="btn btn-light btn-sm" title="Pin">
+												<button
+													class="btn btn-primary btn-sm"
+													title="Pin it"
+													onclick="window.open(`https://in.pinterest.com/pin-builder/?url=${localStorage.getItem('activeSlideUrl')}`);return false;"
+												>
 													<em class="bi bi-pinterest"></em>
 												</button>
 												<button
 													button
-													class="btn btn-light btn-sm"
+													class="btn btn-primary btn-sm"
 													title="Download"
 													onclick="window.open(localStorage.getItem('activeSlideUrl')); return false;"
 													download

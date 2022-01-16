@@ -146,7 +146,9 @@ body {
 	background-color: var(--primary-text-color);
 	border-color: var(--primary-text-color);
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
 	background-color: var(--secondary-text-color);
 	border-color: var(--secondary-text-color);
 }
