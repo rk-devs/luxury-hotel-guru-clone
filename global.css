@@ -50,6 +50,7 @@ body {
 
 /* CENTER SLIDE CONTENTS VERTICALLY */
 .swiper-slide {
+	min-height: 500px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -65,9 +66,10 @@ body {
 }
 
 .swiper-slide img {
-	display: block;
-	width: 90%;
-	height: 90%;
+	width: 100%;
+	max-width: 700px;
+	height: 100%;
+	max-height: 700px;
 	object-fit: cover;
 }
 
