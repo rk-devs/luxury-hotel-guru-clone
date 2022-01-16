@@ -74,7 +74,7 @@ li.timeline-item::before {
 }
 
 .author-image-one {
-	background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/megan-fox-1604309045.jpg?crop=0.689xw:0.458xh;0.149xw,0.0107xh&resize=640:*");
+	background-image: url("https://luxuryhotel.guru/temp/user/29.jpg?1=1");
 	z-index: 1;
 	background-size: cover;
 	min-width: 100px;
@@ -84,7 +84,7 @@ li.timeline-item::before {
 /*   for second author */
 .author-image-two {
 	right: 2%;
-	background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg?width=982&height=726&auto=webp&quality=75");
+	background-image: url("https://luxuryhotel.guru/temp/user/9978.jpg?1=1");
 	background-size: cover;
 	min-width: 100px;
 	height: 100px;
