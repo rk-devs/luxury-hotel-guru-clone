@@ -24,4 +24,7 @@
 	--dark-border-color: hsl(0, 0%, 0%);
 	/*? MISC COLORS */
 	--primary-shadow-color: rgba(0, 0, 0, 0.5);
+	/*? LIBRARY COLOR OVERRIDES   */
+	--swiper-navigation-color: rgb(246, 99, 99);
+	--swiper-pagination-color: rgb(246, 99, 99);
 }

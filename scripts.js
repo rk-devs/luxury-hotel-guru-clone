@@ -1,5 +1,11 @@
 const swiper = new Swiper(".mySwiper", {
-	zoom: true,
+	spaceBetween: 10,
+	slidesPerView: 4,
+	freeMode: true,
+	watchSlidesProgress: true,
+});
+const swiper2 = new Swiper(".mySwiper2", {
+	spaceBetween: 10,
 	pagination: {
 		el: ".swiper-pagination",
 		type: "fraction",
@@ -7,5 +13,8 @@ const swiper = new Swiper(".mySwiper", {
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
+	},
+	thumbs: {
+		swiper,
 	},
 });

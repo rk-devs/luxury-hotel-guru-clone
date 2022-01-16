@@ -188,7 +188,7 @@
 								class="modal fade"
 								id="staticBackdrop"
 								data-bs-backdrop="static"
-								data-bs-keyboard="false"
+								data-bs-keyboard="true"
 								tabindex="-1"
 								aria-labelledby="staticBackdropLabel"
 								aria-hidden="true"
@@ -198,6 +198,7 @@
 										<div class="modal-header">
 											<h5 class="modal-title" id="staticBackdropLabel">
 												Modal title
+												<div class="swiper-pagination"></div>
 											</h5>
 											<button
 												type="button"
@@ -207,82 +208,116 @@
 											></button>
 										</div>
 
-										<!-- ! Image carousel -->
 										<div class="modal-body">
-											<div class="swiper mySwiper">
+											<!-- ! Image carousel -->
+
+											<!-- ? Actual swiper -->
+											<div class="swiper mySwiper2">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide">
-														<div class="swiper-zoom-container">
-															<img
-																alt="Image one of hotel"
-																src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg"
-															/>
-														</div>
+														<img
+															src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg"
+															alt="Whitby Hotel image one"
+														/>
 													</div>
 													<div class="swiper-slide">
-														<div class="swiper-zoom-container">
-															<img
-																alt="Image two of hotel"
-																src="https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWx8ZW58MHx8MHx8&w=1000&q=80"
-															/>
-														</div>
+														<img
+															src="https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWx8ZW58MHx8MHx8&w=1000&q=80"
+															alt="Whitby Hotel image two"
+														/>
 													</div>
 													<div class="swiper-slide">
-														<div class="swiper-zoom-container">
-															<img
-																alt="Image three of hotel"
-																src="https://www.intechnic.com/hubfs/Blog/Featured%20Images/Best%20Hotel%20Website%20Designs.jpg"
-															/>
-														</div>
+														<img
+															src="https://www.intechnic.com/hubfs/Blog/Featured%20Images/Best%20Hotel%20Website%20Designs.jpg"
+															alt="Whitby Hotel image three"
+														/>
 													</div>
 													<div class="swiper-slide">
-														<div class="swiper-zoom-container">
-															<img
-																alt="Image four of hotel"
-																src="https://www.mayfairhotels.com/img/home_banner/Mayfair_Waves.jpg"
-															/>
-														</div>
+														<img
+															src="https://www.mayfairhotels.com/img/home_banner/Mayfair_Waves.jpg"
+															alt="Whitby Hotel image four"
+														/>
 													</div>
 													<div class="swiper-slide">
-														<div class="swiper-zoom-container">
-															<img
-																alt="Image five of hotel"
-																src="https://pix10.agoda.net/hotelImages/303258/-1/2702e5e96dda3df87daa6014d6591544.jpg?s=1024x768"
-															/>
-														</div>
+														<img
+															src="https://pix10.agoda.net/hotelImages/303258/-1/2702e5e96dda3df87daa6014d6591544.jpg?s=1024x768"
+															alt="Whitby Hotel image five"
+														/>
 													</div>
 													<div class="swiper-slide">
-														<div class="swiper-zoom-container">
-															<img
-																alt="Image six of hotel"
-																src="https://gos3.ibcdn.com/0d73fb9698f411eaa2db0242ac110002.jpg"
-															/>
-														</div>
+														<img
+															src="https://gos3.ibcdn.com/0d73fb9698f411eaa2db0242ac110002.jpg"
+															alt="Whitby Hotel image six"
+														/>
 													</div>
 													<div class="swiper-slide">
-														<div class="swiper-zoom-container">
-															<img
-																alt="Image seven of hotel"
-																src="https://media-cdn.tripadvisor.com/media/photo-s/1c/de/e4/98/exterior.jpg"
-															/>
-														</div>
+														<img
+															src="https://media-cdn.tripadvisor.com/media/photo-s/1c/de/e4/98/exterior.jpg"
+															alt="Whitby Hotel image seven"
+														/>
+													</div>
+												</div>
+												<!-- slide controls -->
+												<div class="swiper-button-next">
+													<em class="bi bi bi-caret-right" id="arrow_icon"></em>
+												</div>
+												<div class="swiper-button-prev">
+													<em class="bi bi bi-caret-left" id="arrow_icon"></em>
+												</div>
+												<!-- slide controls ends here-->
+												<div class="swiper-pagination"></div>
+											</div>
+
+											<!-- ? Thumbnail  swiper -->
+
+											<div thumbsSlider="" class="swiper mySwiper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+														<img
+															src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/welcomhotel-bhubaneswar.jpg"
+															alt="Whitby Hotel image one's thumbnail"
+														/>
+													</div>
+													<div class="swiper-slide">
+														<img
+															src="https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWx8ZW58MHx8MHx8&w=1000&q=80"
+															alt="Whitby Hotel image two's thumbnail"
+														/>
+													</div>
+													<div class="swiper-slide">
+														<img
+															src="https://www.intechnic.com/hubfs/Blog/Featured%20Images/Best%20Hotel%20Website%20Designs.jpg"
+															alt="Whitby Hotel image three's thumbnail"
+														/>
+													</div>
+													<div class="swiper-slide">
+														<img
+															src="https://www.mayfairhotels.com/img/home_banner/Mayfair_Waves.jpg"
+															alt="Whitby Hotel image four's thumbnail"
+														/>
+													</div>
+													<div class="swiper-slide">
+														<img
+															src="https://pix10.agoda.net/hotelImages/303258/-1/2702e5e96dda3df87daa6014d6591544.jpg?s=1024x768"
+															alt="Whitby Hotel image five's thumbnail"
+														/>
+													</div>
+													<div class="swiper-slide">
+														<img
+															src="https://gos3.ibcdn.com/0d73fb9698f411eaa2db0242ac110002.jpg"
+															alt="Whitby Hotel image six's thumbnail"
+														/>
+													</div>
+													<div class="swiper-slide">
+														<img
+															src="https://media-cdn.tripadvisor.com/media/photo-s/1c/de/e4/98/exterior.jpg"
+															alt="Whitby Hotel image seven's thumbnail"
+														/>
 													</div>
 												</div>
 											</div>
-											<!-- slide controls -->
-											<div class="swiper-button-next">
-												<em
-													class="bi bi-arrow-right-square-fill"
-													id="arrow_icon"
-												></em>
-											</div>
-											<div class="swiper-button-prev">
-												<em
-													class="bi bi-arrow-left-square-fill"
-													id="arrow_icon"
-												></em>
-											</div>
-											<div class="swiper-pagination"></div>
+
+											<!-- ! Image carousel -->
 										</div>
 									</div>
 								</div>
