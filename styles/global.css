@@ -17,7 +17,7 @@ html {
 
 /* Show loader until images are loaded */
 img {
-	background: url("loader.gif") no-repeat;
+	background: url("/assets/loader.gif") no-repeat;
 	background-position: center;
 }
 
@@ -78,7 +78,7 @@ body {
 .swiper-slide {
 	text-align: center;
 	font-size: 18px;
-	background: #fff;
+	background: var(--light-background-color);
 
 	/* Center slide text vertically */
 	display: -webkit-box;
@@ -130,7 +130,7 @@ body {
 .thumb_swiper_hotel_1 .swiper-slide {
 	width: 25%;
 	height: 100%;
-	opacity: 0.4;
+	opacity: 0.6;
 }
 
 .thumb_swiper_hotel_1 .swiper-slide-thumb-active {
@@ -142,7 +142,7 @@ body {
 .thumb_swiper_hotel_2 .swiper-slide {
 	width: 25%;
 	height: 100%;
-	opacity: 0.4;
+	opacity: 0.6;
 }
 
 .thumb_swiper_hotel_2 .swiper-slide-thumb-active {
@@ -188,6 +188,14 @@ body {
 	border-color: var(--secondary-text-color);
 }
 
-/* MODAL BODY */
+/* MODAL */
+.modal-header {
+	border-bottom: none;
+}
+
+.modal-content {
+	background-color: transparent;
+	backdrop-filter: blur(25px);
+}
 
 /*! ********************************* GLOBAL BOOTSTRAP STYLES ENDS ***************************/

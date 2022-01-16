@@ -1,8 +1,8 @@
 // * function to store url of active slide's image to local storage
-const storeSlideUrlToStorage = () => {
+const storeSlideUrlToStorage = (activeSwiper) => {
 	localStorage.setItem(
 		"activeSlideUrl",
-		mainSwiperHotel1.imagesToLoad[mainSwiperHotel1.activeIndex].src
+		activeSwiper.imagesToLoad[activeSwiper.activeIndex].src
 	);
 };
 
@@ -51,3 +51,4 @@ const mainSwiperHotel2 = new Swiper(".main_swiper_hotel_2", {
 
 // ! storing current slid's url to local storage
 mainSwiperHotel1.on("transitionEnd", storeSlideUrlToStorage);
+mainSwiperHotel2.on("transitionEnd", storeSlideUrlToStorage);
