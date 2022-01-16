@@ -51,7 +51,11 @@ body {
 /* font heading style */
 .fw-bold {
 	font-size: 3.5rem;
-	text-shadow: 1px 1px var(--primary-shadow-color);
+	background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* text-shadow: 1px 1px var(--primary-shadow-color); */
 }
 
 /********************************** GLOBAL SWIPER STYLES STARTS ****************************/
