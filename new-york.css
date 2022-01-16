@@ -5,6 +5,11 @@
 
 /****************************************************************** Listing page css starts here*/
 
+#map_button {
+	display: flex;
+	justify-content: flex-end;
+}
+
 /* Main container css */
 .main_container {
 	background-color: var(--alt-background-color);
@@ -30,7 +35,7 @@
 }
 /* side nav css ends here*/
 
-/* AUthor image's css starts here */
+/* Author image's css starts here */
 .article-author-container {
 	display: flex;
 	justify-content: center;
@@ -49,7 +54,7 @@
 	height: 90px;
 }
 
-/*   for second author */
+/* for second author */
 .article-author-image-two {
 	right: 10%;
 	background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg?width=982&height=726&auto=webp&quality=75");
