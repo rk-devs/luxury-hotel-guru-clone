@@ -38,5 +38,16 @@ const mainSwiperHotel1 = new Swiper(".main_swiper_hotel_1", {
 });
 //* For hotel 1
 
+//* For hotel 2
+const thumbSwiperHotel2 = new Swiper(".thumb_swiper_hotel_2", thumbProps);
+
+const mainSwiperHotel2 = new Swiper(".main_swiper_hotel_2", {
+	...mainSwiperProps,
+	thumbs: {
+		swiper: thumbSwiperHotel2,
+	},
+});
+//* For hotel 2
+
 // ! storing current slid's url to local storage
 mainSwiperHotel1.on("transitionEnd", storeSlideUrlToStorage);

@@ -114,17 +114,19 @@ body {
 	background-position: center;
 }
 
-.main_swiper_hotel_1 {
+.main_swiper_hotel_1,
+.main_swiper_hotel_2 {
 	height: 80%;
 	width: 100%;
 }
 
-.thumb_swiper_hotel_1 {
+.thumb_swiper_hotel_1,
+.thumb_swiper_hotel_2 {
 	height: 20%;
 	box-sizing: border-box;
 	padding: 10px 0;
 }
-
+/* for hotel 1 */
 .thumb_swiper_hotel_1 .swiper-slide {
 	width: 25%;
 	height: 100%;
@@ -134,6 +136,19 @@ body {
 .thumb_swiper_hotel_1 .swiper-slide-thumb-active {
 	opacity: 1;
 }
+/* for hotel 1 */
+
+/* for hotel 2*/
+.thumb_swiper_hotel_2 .swiper-slide {
+	width: 25%;
+	height: 100%;
+	opacity: 0.4;
+}
+
+.thumb_swiper_hotel_2 .swiper-slide-thumb-active {
+	opacity: 1;
+}
+/* for hotel 1 */
 
 .swiper-slide img {
 	display: block;
