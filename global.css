@@ -30,6 +30,14 @@ a:hover {
 	color: var(--secondary-text-color);
 }
 
+#section_hr {
+	width: 40%;
+}
+
+hr:not([size]) {
+	height: 2px;
+}
+
 /* BODY STYLING */
 body {
 	font-family: "Ubuntu", sans-serif !important;
@@ -39,6 +47,11 @@ body {
 /* HEADER STYLES */
 .heading_container {
 	padding: 7rem 0 3rem 0;
+}
+/* font heading style */
+.fw-bold {
+	font-size: 3.5rem;
+	text-shadow: 1px 1px var(--primary-shadow-color);
 }
 
 /********************************** GLOBAL SWIPER STYLES STARTS ****************************/

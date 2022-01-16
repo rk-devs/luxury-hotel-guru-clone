@@ -26,5 +26,5 @@
 	--primary-shadow-color: rgba(0, 0, 0, 0.5);
 	/*? LIBRARY COLOR OVERRIDES   */
 	--swiper-navigation-color: rgb(246, 99, 99);
-	--swiper-pagination-color: rgb(246, 99, 99);
+	--swiper-pagination-color: rgba(246, 99, 99, 0.548);
 }
