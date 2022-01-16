@@ -18,3 +18,11 @@ const swiper2 = new Swiper(".mySwiper2", {
 		swiper,
 	},
 });
+
+// ! storing current slid's url to local storage
+swiper2.on("transitionEnd", function () {
+	localStorage.setItem(
+		"activeSlideUrl",
+		swiper2.imagesToLoad[swiper2.activeIndex].src
+	);
+});
