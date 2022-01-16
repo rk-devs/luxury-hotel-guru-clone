@@ -1,17 +1,19 @@
 /** DECLARE VARIABLES FOR USE IN CSS FILES */
 
+/* 	(to right, #91aad1, #ffb1b1); */
 :root {
 	/*? TEXT COLORS */
-	--primary-text-color: hsl(267, 48%, 27%);
-	--secondary-text-color: hsl(180, 63%, 50%);
+
+	--primary-text-color: #91aad1;
+	--secondary-text-color: #ffb1b1;
 	--tertiary-text-color: hsl(0, 0%, 95%);
 	--alt-text-color: hsl(0, 70%, 34%);
 	--light-text-color: hsl(0, 0%, 100%);
 	--dark-text-color: hsl(0, 0%, 0%);
 	/*? BACKGROUND COLORS */
 	--primary-background-color: hsl(208, 100%, 97%);
-	--secondary-background-color: hsl(180, 63%, 50%);
-	--tertiary-background-color: hsl(267, 86%, 22%);
+	--secondary-background-color: #e6e6fa;
+	--tertiary-background-color: #91aad1;
 	--alt-background-color: hsl(216, 100%, 99%);
 	--light-background-color: hsl(0, 0%, 100%);
 	--dark-background-color: hsl(0, 0%, 0%);
@@ -25,6 +27,6 @@
 	/*? MISC COLORS */
 	--primary-shadow-color: hsla(0, 0%, 0%, 0.5);
 	/*? LIBRARY COLOR OVERRIDES   */
-	--swiper-navigation-color: hsl(267, 86%, 22%);
+	--swiper-navigation-color: #91aad1;
 	--swiper-pagination-color: hsla(0, 89%, 68%, 0.548);
 }

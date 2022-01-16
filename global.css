@@ -51,7 +51,11 @@ body {
 /* font heading style */
 .fw-bold {
 	font-size: 3.5rem;
-	background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+	background: linear-gradient(
+		to right,
+		var(--secondary-text-color) 0%,
+		var(--primary-text-color) 100%
+	);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;

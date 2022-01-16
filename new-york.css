@@ -51,13 +51,12 @@
 }
 .article-author {
 	border-radius: 100px;
-	border: 5px solid var(--secondary-background-color);
+	border: 5px solid var(--light-background-color);
 	position: relative;
 }
 
 .article-author-image-one {
 	background-image: url("https://luxuryhotel.guru/temp/user/29.jpg?1=1");
-
 	z-index: 1;
 	background-size: cover;
 	min-width: 90px;
@@ -149,13 +148,6 @@
 	content: "\201C";
 }
 
-.review_author {
-	color: var(--alt-text-color);
-}
-
-.review_author::before {
-	content: "\2014";
-}
 /* ! ************************* HOTEL CARD CSS ENDS HERE  ************************  */
 
 /* ? ************************* BOOTSTRAP CSS OVERRIDES STARTS HERE  ************************* */
