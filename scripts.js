@@ -5,6 +5,7 @@ const storeSlideUrlToStorage = () => {
 	);
 };
 
+/* For hotel 1 */
 const thumbSwiperHotel1 = new Swiper(".thumb_swiper_hotel_1", {
 	spaceBetween: 10,
 	slidesPerView: 4,
@@ -26,6 +27,7 @@ const mainSwiperHotel1 = new Swiper(".main_swiper_hotel_1", {
 		swiper: thumbSwiperHotel1,
 	},
 });
+/* For hotel 1 */
 
 // ! storing current slid's url to local storage
 mainSwiperHotel1.on("transitionEnd", storeSlideUrlToStorage);
