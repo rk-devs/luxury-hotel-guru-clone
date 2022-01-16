@@ -7,11 +7,11 @@
 .
 ├── index.html
 │ └── entry point for the website
-├── assets
+├── assets directory
 │ └── stores assets for entire website
-├── pages
+├── pages directory
 │ └── stores pages for entire website
-├── scripts
+├── scripts directory
 │ └── stores scripts for entire website
-└── styles
+└── styles directory
 └── stores styles for entire website
