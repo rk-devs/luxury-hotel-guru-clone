@@ -38,10 +38,44 @@
 	overflow: auto;
 }
 
+/* removing default styling from .nav-link.active */
+.nav-pills .nav-link.active {
+	background-color: inherit !important;
+	color: var(--primary-color);
+}
+
+/* nav item number color css */
+.side_nav_links_container .nav-link.active .hotel_num_side_nav {
+	padding: 5px;
+	min-width: 33px;
+	max-height: 33px;
+	background: var(--secondary-text-color);
+	border-radius: 30px;
+	text-align: center;
+	margin-right: 5px;
+	color: var(--tertiary-text-color);
+}
+.side_nav_links_container .nav-link.active .hotel_name_side_nav {
+	color: var(--secondary-text-color);
+}
+
+.hotel_num_side_nav {
+	padding: 5px;
+	min-width: 33px;
+	max-height: 33px;
+	background: var(--secondary-background-color);
+	border-radius: 30px;
+	text-align: center;
+	margin-right: 5px;
+	color: var(--primary-text-color);
+}
+
+/** side nav css ends here*/
+
 .author-card-with-sidebar {
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
-	top: 20%;
+	top: 10%;
 	/* max-height: 400px; */
 	/* overflow: auto; */
 }

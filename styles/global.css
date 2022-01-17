@@ -42,9 +42,6 @@ em {
 /** Horizontal line styling */
 #section_hr {
 	width: 40%;
-}
-
-hr:not([size]) {
 	height: 2px;
 }
 
@@ -172,6 +169,18 @@ body {
 /********************************** GLOBAL SWIPER STYLES ENDS ****************************/
 
 /*! ********************************* GLOBAL SWIPER STYLES STARTS ***************************/
+
+/** Nav CSS starts*/
+.nav-link {
+	display: flex;
+	align-items: center;
+}
+
+.nav-link:focus {
+	color: var(--primary-text-color);
+}
+/** Nav CSS ends */
+/** BUTTON CSS */
 
 .btn-primary {
 	background-color: var(--primary-text-color);
