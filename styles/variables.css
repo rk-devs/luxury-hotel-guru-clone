@@ -12,7 +12,7 @@
 	--dark-text-color: hsl(0, 0%, 0%);
 	/*? BACKGROUND COLORS */
 	--primary-background-color: hsl(208, 100%, 97%);
-	--secondary-background-color: #e6e6fa;
+	--secondary-background-color: #bebef0;
 	--tertiary-background-color: #91aad1;
 	--alt-background-color: hsl(216, 100%, 99%);
 	--light-background-color: hsl(0, 0%, 100%);
@@ -25,7 +25,16 @@
 	--light-border-color: hsl(0, 0%, 100%);
 	--dark-border-color: hsl(0, 0%, 0%);
 	/*? MISC COLORS */
+
+	--hotel-rating-text-color: rgb(75, 82, 231);
+
+	--hotel-rooms-text-color: rgb(47, 160, 188);
+
+	--hotel-stars-text-color: rgb(162, 197, 76);
+
+	/*? Shadow  */
 	--primary-shadow-color: hsla(0, 0%, 0%, 0.5);
+	--secondary-shadow-color: hsla(0, 0%, 0%, 0.2);
 	/*? LIBRARY COLOR OVERRIDES   */
 	--swiper-navigation-color: #91aad1;
 	--swiper-pagination-color: hsla(0, 89%, 68%, 0.548);

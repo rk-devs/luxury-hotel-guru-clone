@@ -168,29 +168,105 @@
 
 /*  ************************* HOTEL DESCRIPTION CSS ENDS HERE  ************************  */
 
+/*  */
+
 /* hotel stats css starts here */
-hotel_stats {
+
+/* .hotel_stats {
 	display: flex;
-	justify-content: space-between;
-	margin-bottom: 1rem;
+	gap: 2rem;
+} */
+
+.hotel_rating,
+.hotel_rooms,
+.hotel_stars,
+.hotel_price {
+	/* min-width: 180px; */
+	border-radius: 5px;
+	text-align: center;
+	font-size: 1.2rem;
+	/* padding: 0.5rem; */
+	/* min-height: 40px; */
+	background-color: var(--light-background-color);
+	box-shadow: 0 0 5px var(--secondary-shadow-color);
 }
 
-.hotel_review_row {
-	margin-top: 2rem;
+/* hotel rating css */
+.hotel_rating {
+	color: var(--hotel-rating-text-color);
 }
 
-.hotel_review_col {
+/* hotel rooms css */
+.hotel_rooms {
+	color: var(--hotel-rooms-text-color);
+}
+
+/* hotel stars css */
+.hotel_stars {
+	color: var(--hotel-stars-text-color);
+}
+
+/* hotel rating css */
+.hotel_price {
+	color: rgb(243, 155, 155);
+}
+
+/* hotel review */
+.hotel_review > cite {
+	float: right;
+}
+blockquote {
 	background-color: var(--secondary-background-color);
-	border-right: 3px solid var(--secondary-border-color);
-	font-style: italic;
+	border-radius: 20px;
+	font-weight: 100;
+	font-size: 1rem;
+	/* max-width: 600px; */
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+	padding: 0.5rem;
 }
 
-.hotel_review::before {
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	color: #87772f;
+	font-size: 3rem;
+	width: 1rem;
+	height: 1rem;
+}
+
+blockquote:before {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	content: "\201C";
+	left: -2rem;
+	top: -1rem;
+}
+
+blockquote:after {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	content: "\201D";
+	right: -2rem;
+	/* bottom: 1rem; */
+}
+/*
+@media screen and (max-width: 990px) {
+	blockquote:after {
+		right: -2rem;
+	}
+} */
+
+cite {
+	line-height: 3;
+	text-align: left;
+}
+/*  */
+/* .hotel_review::before {
 	content: "\201C";
 }
 .hotel_review::after {
 	content: "\201C";
-}
+} */
 
 /* ! ************************* HOTEL CARD CSS ENDS HERE  ************************  */
 
