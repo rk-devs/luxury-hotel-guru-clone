@@ -973,45 +973,42 @@
 			<div class="modal-dialog modal-fullscreen">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="hotel_one_modal_label">
-							<a
-								href="#"
-								class="btn btn-success btn-sm"
-								tabindex="-1"
-								role="button"
-								aria-disabled="true"
-							>
-								<em class="bi bi-arrow-right-short">See available rooms</em></a
-							>
-						</h5>
+						<a
+							href="#"
+							class="btn btn-success btn-sm"
+							tabindex="-1"
+							role="button"
+							aria-disabled="true"
+						>
+							<em class="bi bi-arrow-right-short">See available rooms</em></a
+						>
 
 						<div>
 							<!--* social buttons to share  -->
 							<button
-								class="btn btn-primary btn-sm"
+								class="btn btn-primary btn-sm mt-1"
 								title="Share it"
 								onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${localStorage.getItem('activeSlideUrl')}`);return false;"
 							>
 								<em class="bi bi-facebook"></em>
 							</button>
 							<button
-								class="btn btn-primary btn-sm"
+								class="btn btn-primary btn-sm mt-1"
 								title="Tweet it"
 								onclick="window.open(`https://twitter.com/intent/tweet?text=check%20this%20awesome%20location%20${localStorage.getItem('activeSlideUrl')}`);return false;"
 							>
 								<em class="bi bi-twitter"></em>
 							</button>
 							<button
-								class="btn btn-primary btn-sm"
+								class="btn btn-primary btn-sm mt-1"
 								title="Pin it"
 								onclick="window.open(`https://in.pinterest.com/pin-builder/?url=${localStorage.getItem('activeSlideUrl')}`);return false;"
 							>
 								<em class="bi bi-pinterest"></em>
 							</button>
-							<!--*  button  to close modal-->
 							<button
 								button
-								class="btn btn-primary btn-sm"
+								class="btn btn-primary btn-sm mt-1"
 								title="Download"
 								onclick="window.open(localStorage.getItem('activeSlideUrl')); return false;"
 								download
@@ -1019,9 +1016,10 @@
 								<em class="bi bi-cloud-download-fill"> </em>
 							</button>
 
+							<!--*  button  to close modal-->
 							<button
 								type="button"
-								class="btn text-light"
+								class="btn text-light close_modal"
 								title="close"
 								data-bs-dismiss="modal"
 								aria-label="Close"
@@ -1176,21 +1174,21 @@
 						<div>
 							<!--* social buttons to share  -->
 							<button
-								class="btn btn-primary btn-sm"
+								class="btn btn-primary btn-sm mt-1"
 								title="Share it"
 								onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${localStorage.getItem('activeSlideUrl')}`);return false;"
 							>
 								<em class="bi bi-facebook"></em>
 							</button>
 							<button
-								class="btn btn-primary btn-sm"
+								class="btn btn-primary btn-sm mt-1"
 								title="Tweet it"
 								onclick="window.open(`https://twitter.com/intent/tweet?text=check%20this%20awesome%20location%20${localStorage.getItem('activeSlideUrl')}`);return false;"
 							>
 								<em class="bi bi-twitter"></em>
 							</button>
 							<button
-								class="btn btn-primary btn-sm"
+								class="btn btn-primary btn-sm mt-1"
 								title="Pin it"
 								onclick="window.open(`https://in.pinterest.com/pin-builder/?url=${localStorage.getItem('activeSlideUrl')}`);return false;"
 							>
@@ -1199,7 +1197,7 @@
 							<!--*  button  to close modal-->
 							<button
 								button
-								class="btn btn-primary btn-sm"
+								class="btn btn-primary btn-sm mt-1"
 								title="Download"
 								onclick="window.open(localStorage.getItem('activeSlideUrl')); return false;"
 								download
@@ -1209,7 +1207,7 @@
 
 							<button
 								type="button"
-								class="btn text-light"
+								class="btn text-light close_modal"
 								title="close"
 								data-bs-dismiss="modal"
 								aria-label="Close"

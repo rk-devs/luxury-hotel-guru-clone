@@ -193,6 +193,19 @@ body {
 	border-bottom: none;
 }
 
+@media screen and (max-width: 400px) {
+	.modal-header {
+		display: block;
+	}
+	@media screen and (max-width: 400px) {
+		.close_modal {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+}
+
 .modal-content {
 	background-color: transparent;
 	backdrop-filter: blur(25px);
