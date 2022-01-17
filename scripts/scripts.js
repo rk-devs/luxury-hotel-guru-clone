@@ -8,6 +8,7 @@ const storeSlideUrlToStorage = (activeSwiper) => {
 
 // * object with thumbnails' properties
 const thumbProps = {
+	direction: "vertical",
 	spaceBetween: 10,
 	slidesPerView: 4,
 	freeMode: true,
