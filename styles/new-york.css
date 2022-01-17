@@ -170,23 +170,15 @@
 
 /*  */
 
-/* hotel stats css starts here */
-
-/* .hotel_stats {
-	display: flex;
-	gap: 2rem;
-} */
+/*  ************************* HOTEL STATS CSS STARTS HERE  ************************  */
 
 .hotel_rating,
 .hotel_rooms,
 .hotel_stars,
 .hotel_price {
-	/* min-width: 180px; */
 	border-radius: 5px;
 	text-align: center;
 	font-size: 1.2rem;
-	/* padding: 0.5rem; */
-	/* min-height: 40px; */
 	background-color: var(--light-background-color);
 	box-shadow: 0 0 5px var(--secondary-shadow-color);
 }
@@ -206,12 +198,9 @@
 	color: var(--hotel-stars-text-color);
 }
 
-/* hotel rating css */
-.hotel_price {
-	color: rgb(243, 155, 155);
-}
+/*  ************************* HOTEL STATS CSS ENDS HERE  ************************  */
+/*  ************************* HOTEL REVIEW CSS ENDS HERE  ************************  */
 
-/* hotel review */
 .hotel_review > cite {
 	float: right;
 }
@@ -230,7 +219,7 @@ blockquote {
 blockquote:before,
 blockquote:after {
 	position: absolute;
-	color: #87772f;
+	color: var(--secondary-text-color);
 	font-size: 3rem;
 	width: 1rem;
 	height: 1rem;
@@ -247,26 +236,58 @@ blockquote:after {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	content: "\201D";
 	right: -2rem;
-	/* bottom: 1rem; */
 }
-/*
-@media screen and (max-width: 990px) {
-	blockquote:after {
-		right: -2rem;
-	}
-} */
 
 cite {
 	line-height: 3;
 	text-align: left;
 }
-/*  */
-/* .hotel_review::before {
-	content: "\201C";
+
+/*  ************************* HOTEL REVIEW CSS ENDS HERE  ************************  */
+
+/*?  ************************* HOTEL PRICE CTA CSS STARTS HERE  ************************  */
+.booking_btn,
+.tripadvisor_btn,
+.agoda_btn {
+	color: var(--light-text-color);
 }
-.hotel_review::after {
-	content: "\201C";
-} */
+.booking_btn:hover,
+.tripadvisor_btn:hover,
+.agoda_btn:hover {
+	color: var(--light-text-color);
+}
+
+.booking_btn {
+	background-color: #4c7ec3;
+}
+.booking_btn:hover {
+	background-color: #003580;
+}
+.booking_btn:focus {
+	background-color: #003580;
+}
+
+.tripadvisor_btn {
+	background-color: #34e0a1;
+}
+.tripadvisor_btn:hover {
+	background-color: #299c72;
+}
+.tripadvisor_btn:focus {
+	background-color: #299c72;
+}
+
+.agoda_btn {
+	background-color: #ff567d;
+}
+.agoda_btn:hover {
+	background-color: #ee363f;
+}
+.agoda_btn:focus {
+	background-color: #ee363f;
+}
+
+/*?  ************************* HOTEL PRICE CTA CSS STARTS HERE  ************************  */
 
 /* ! ************************* HOTEL CARD CSS ENDS HERE  ************************  */
 
