@@ -29,4 +29,14 @@
 	/*? LIBRARY COLOR OVERRIDES   */
 	--swiper-navigation-color: #91aad1;
 	--swiper-pagination-color: hsla(0, 89%, 68%, 0.548);
+
+	/* SWIPER RELATED VARIABLES*/
+	--thumb-swiper-inactive-opacity: 0.6;
+	--thumb-swiper-active-opacity: 1;
+	/* change these values to manipulate dimension of all the main swiper at once */
+	--main-swiper-width: 100%;
+	--main-swiper-height: 100%;
+	/* change these values to manipulate dimension of all the thumb swiper at once */
+	--thumb-swiper-width: 40%;
+	--thumb-swiper-height: 40%;
 }
