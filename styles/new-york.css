@@ -3,7 +3,7 @@
 @import url("variables.css"); /* Import variables.css */
 @import url("global.css"); /* Import global.css */
 
-/****************************************************************** Listing page css starts here*/
+/*******************************  Listing page css starts here*/
 
 #map_button {
 	z-index: 100;
@@ -31,11 +31,19 @@
 }
 /* Main container css ends here */
 
-/* side nav css starts here*/
+/* * side nav css starts here*/
+
+.side_nav_links_container {
+	max-height: 500px;
+	overflow: auto;
+}
+
 .author-card-with-sidebar {
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
-	top: 0;
+	top: 20%;
+	/* max-height: 400px; */
+	/* overflow: auto; */
 }
 @media screen and (max-width: 990px) {
 	#hotel_side_nav {
