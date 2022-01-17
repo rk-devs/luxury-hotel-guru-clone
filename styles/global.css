@@ -9,6 +9,10 @@ html {
 * {
 	padding: 0;
 	margin: 0;
+	/* for debugging ghost elements */
+	/* background: #000 !important;
+	color: #0f0 !important;
+	outline: solid #f00 1px !important; */
 }
 
 *:focus {
@@ -68,6 +72,17 @@ body {
 	/* text-shadow: 1px 1px var(--primary-shadow-color); */
 }
 
+/* footer social icons styles */
+.social_icons_footer {
+	flex-direction: row;
+}
+
+@media screen and (max-width: 300px) {
+	.social_icons_footer {
+		flex-direction: column;
+	}
+}
+
 /********************************** GLOBAL SWIPER STYLES STARTS ****************************/
 /* STYLING OF ARROW ICONS OF SWIPER */
 #arrow_icon {
@@ -75,7 +90,7 @@ body {
 	color: var(--primary-text-color);
 }
 
-/* hiding thumbswiper on mobile devices */
+/* hiding thumb swiper on mobile devices */
 @media (max-width: 500px) {
 	#thumb-swiper {
 		display: none;
@@ -100,7 +115,7 @@ body {
 .thumb_swiper_hotel_2 {
 	height: 100%;
 	box-sizing: border-box;
-	margin-left: 10px;
+	margin-left: 3rem;
 }
 /* for hotel 1 */
 .thumb_swiper_hotel_1 .swiper-slide {
@@ -130,7 +145,12 @@ body {
 	display: block;
 	width: 100%;
 	height: 100%;
-	/* object-fit: cover; */
+}
+/* on smaller display adjust images to not look stretched out */
+@media (max-width: 500px) {
+	.swiper-slide img {
+		object-fit: cover;
+	}
 }
 /* REMOVE DEFAULT NEXT AND PREVIOUS ARROWS  */
 .swiper-button-next,
@@ -164,10 +184,17 @@ body {
 	border-color: var(--secondary-text-color);
 }
 
-/* MODAL */
+/** MODAL CSS */
 
 .modal-body {
 	display: flex;
+	padding: 5rem 20rem 5rem 20rem;
+}
+
+@media screen and (max-width: 500px) {
+	.modal-body {
+		padding: 0.2rem;
+	}
 }
 
 .modal-header {

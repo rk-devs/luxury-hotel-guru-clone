@@ -134,17 +134,19 @@
 
 /*  ************************* HOTEL DESCRIPTION CSS ENDS HERE  ************************  */
 
-/* Stars styling */
-.rating {
-	color: var(--primary-text-color);
+/* hotel stats css starts here */
+hotel_stats {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
 }
 
 .hotel_review_row {
 	margin-top: 2rem;
-	background-color: var(--secondary-background-color);
 }
 
 .hotel_review_col {
+	background-color: var(--secondary-background-color);
 	border-right: 3px solid var(--secondary-border-color);
 	font-style: italic;
 }

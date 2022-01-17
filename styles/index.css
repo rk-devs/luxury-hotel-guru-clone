@@ -12,6 +12,17 @@
 
 /* Search css ends here*/
 
+/* destinations with image */
+.destinations {
+	padding: 3rem;
+}
+
+@media screen and (max-width: 400px) {
+	.destinations {
+		padding: 1rem;
+	}
+}
+
 /* Timeline Css starts here */
 ul.timeline {
 	list-style-type: none;
