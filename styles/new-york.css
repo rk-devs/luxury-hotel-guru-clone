@@ -196,11 +196,25 @@
 }
 
 /*  ************************* HOTEL STATS CSS ENDS HERE  ************************  */
-/*  ************************* HOTEL REVIEW CSS ENDS HERE  ************************  */
+
+/*?  ************************* HOTEL REVIEW CSS ENDS HERE  ************************  */
 
 .hotel_review > cite {
 	float: right;
 }
+
+.hotel_review_col {
+	padding-right: 5rem;
+	border-right: 4px solid var(--primary-border-color);
+}
+
+@media screen and (max-width: 400px) {
+	.hotel_review_col {
+		padding-right: 0;
+		border-right: 0;
+	}
+}
+
 blockquote {
 	background-color: var(--secondary-background-color);
 	border-radius: 20px;
