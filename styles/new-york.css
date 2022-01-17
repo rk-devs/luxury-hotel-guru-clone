@@ -5,20 +5,11 @@
 
 /*******************************  Listing page css starts here*/
 
-#map_button {
-	z-index: 100;
-	right: 0;
-	top: 50px;
-	position: fixed;
+.nyc_header {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2b/NYC_Downtown_Manhattan_Skyline_seen_from_Paulus_Hook_2019-12-20_IMG_7347_FRD_%28cropped%29.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-
-@media screen and (max-width: 990px) {
-	#map_button {
-		bottom: 0;
-		top: auto;
-	}
-}
-
 /* Main container css */
 .main_container {
 	background-color: var(--alt-background-color);
@@ -178,7 +169,7 @@
 .hotel_price {
 	border-radius: 5px;
 	text-align: center;
-	font-size: 1.2rem;
+	/* font-size: 1.2rem; */
 	background-color: var(--light-background-color);
 	box-shadow: 0 0 5px var(--secondary-shadow-color);
 }

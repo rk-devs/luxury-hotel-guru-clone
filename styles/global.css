@@ -53,19 +53,19 @@ body {
 
 /* HEADER STYLES */
 .heading_container {
-	padding: 7rem 0 3rem 0;
+	padding: 8rem 0 4rem 0;
 }
 /* font heading style */
 .fw-bold {
 	font-size: 3.5rem;
-	background: linear-gradient(
+	/* background: linear-gradient(
 		to right,
 		var(--secondary-text-color) 0%,
 		var(--primary-text-color) 100%
 	);
 	-webkit-background-clip: text;
 	background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent; */
 	/* text-shadow: 1px 1px var(--primary-shadow-color); */
 }
 
@@ -191,6 +191,18 @@ body {
 .btn-primary:focus {
 	background-color: var(--secondary-text-color);
 	border-color: var(--secondary-text-color);
+}
+
+.btn-success {
+	background-color: rgb(39, 89, 5);
+	border-color: rgb(39, 89, 5);
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
+	background-color: rgb(96, 171, 35);
+	border-color: rgb(96, 171, 35);
 }
 
 /** MODAL CSS */
