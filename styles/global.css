@@ -207,8 +207,7 @@ body {
 }
 
 .modal-content {
-	background-color: transparent;
-	backdrop-filter: blur(25px);
+	background-color: var(--dark-background-color);
 }
 
 /*! ********************************* GLOBAL BOOTSTRAP STYLES ENDS ***************************/
