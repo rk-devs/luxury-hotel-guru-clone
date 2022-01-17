@@ -10,6 +10,12 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+.sub_heading {
+	letter-spacing: 1px;
+	text-shadow: 1px 1px var(--primary-shadow-color);
+}
+
 /* Main container css */
 .main_container {
 	background-color: var(--alt-background-color);
