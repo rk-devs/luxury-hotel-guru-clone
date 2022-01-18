@@ -1,12 +1,12 @@
 /** CSS RELATED TO LISTING PAGE GOES HERE */
 
-@import url("variables.css"); /* Import variables.css */
-@import url("global.css"); /* Import global.css */
+@import url('variables.css'); /* Import variables.css */
+@import url('global.css'); /* Import global.css */
 
 /*******************************  Listing page css starts here*/
 
 .nyc_header {
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2b/NYC_Downtown_Manhattan_Skyline_seen_from_Paulus_Hook_2019-12-20_IMG_7347_FRD_%28cropped%29.jpg");
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2b/NYC_Downtown_Manhattan_Skyline_seen_from_Paulus_Hook_2019-12-20_IMG_7347_FRD_%28cropped%29.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -95,7 +95,7 @@
 }
 
 .article-author-image-one {
-	background-image: url("https://luxuryhotel.guru/temp/user/29.jpg?1=1");
+	background-image: url('https://luxuryhotel.guru/temp/user/29.jpg?1=1');
 	z-index: 1;
 	background-size: cover;
 	min-width: 90px;
@@ -105,7 +105,7 @@
 /* for second author */
 .article-author-image-two {
 	right: 10%;
-	background-image: url("https://luxuryhotel.guru/temp/user/9978.jpg?1=1");
+	background-image: url('https://luxuryhotel.guru/temp/user/9978.jpg?1=1');
 	background-size: cover;
 	min-width: 90px;
 	height: 90px;
@@ -237,15 +237,15 @@ blockquote:after {
 }
 
 blockquote:before {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	content: "\201C";
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	content: '\201C';
 	left: -2rem;
 	top: -1rem;
 }
 
 blockquote:after {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	content: "\201D";
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	content: '\201D';
 	right: -2rem;
 }
 
@@ -326,6 +326,7 @@ cite {
 }
 
 .nav-link {
+	padding: 0;
 	color: var(--primary-text-color);
 }
 
