@@ -2,6 +2,7 @@
 
 ## Project structure
 
+```javascript 
 .
 ├── index.html
 │ └── entry point for the website
@@ -13,3 +14,5 @@
 │ └── stores scripts for entire website
 └── styles directory
 └── stores styles for entire website
+
+```
