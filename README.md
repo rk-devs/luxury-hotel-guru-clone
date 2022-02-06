@@ -1,5 +1,7 @@
 # Clone of [luxuryHotel.guru](https://luxuryhotel.guru/)
 
+[Live link](https://luxury-hotel-guru-clone.pages.dev/)
+
 ## Project structure
 
 ```javascript 
